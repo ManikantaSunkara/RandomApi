@@ -20,20 +20,37 @@ namespace RandomApi.Controllers
         }
 
         // POST api/values
-        public double Post([FromBody] string value)
+        public double Post()
         {
             double flt = random.NextDouble();
+            Console.WriteLine(flt);
             return flt;
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
+        public string Put()
         {
+            return "Thank you for the new number";
         }
 
         // DELETE api/values/5
-        public void Delete(int id)
+        public char Delete()
         {
+            double flt = random.NextDouble();
+            int shift = Convert.ToInt32(Math.Floor(25 * flt));
+             return Convert.ToChar(shift + 65);
+
+        }
+        public DateTime Patch()
+        {
+            DateTime now = DateTime.Now;
+            return now;
+           
+        }
+        public string Options()
+        {
+
+            return "Get-randominteger,Post-doublenumber,Put-string,Delete-character,Patch-current Datetime";
         }
     }
 }

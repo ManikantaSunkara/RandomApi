@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\random",
+    "\\random\\RandomApi",
+    "\\random\\RandomApi\\Controllers",
+    "\\random\\RandomApi\\Models"
+  ],
+  "SelectedNode": "\\random\\RandomApi\\Controllers\\ValuesController.cs",
+  "PreviewInSolutionExplorer": false
+}
